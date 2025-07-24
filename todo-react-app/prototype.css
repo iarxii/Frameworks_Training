@@ -1,0 +1,124 @@
+@font-face {
+  font-family: bootstrap-icons;
+  src: url(todo-react-app\node_modules\bootstrap-icons\font\fonts\bootstrap-icons.woff);
+}
+
+:root {
+    --primary-color: #fb4170;
+    --secondary-color: #fdad3e;
+    --accent-color: #3e45b0;
+    --white-color: #fff;
+    --text-color: #5a494e;
+}
+
+.position-reference-link {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+    border-radius: 12px;
+    color: var(--white-color);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 200px;
+    font-size: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.position-reference-link>h6 {
+    color: var(--white-color);
+}
+
+.position-reference-link>a {
+    color: var(--white-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    border-bottom-left-radius: 24px;
+    min-height: 300px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.todo-topics-offset {
+    /* position: absolute; */
+    margin-top: -100px;
+    padding: 0px 3rem;
+}
+
+.search {
+    text-align: center;
+}
+
+.horiz-scroll {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.h-card {
+    border-radius: 16px;
+    padding: 20px;
+    /* h-shadow-length v-shadow-length blur-radius spread-radius color */
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2) ;
+    min-width: 150px;
+    min-height: 200px;
+}
+
+.primary-bg {
+    background-color: var(--primary-color);
+}
+
+.secondary-bg {
+    background-color: var(--secondary-color);
+}
+
+.accent-bg {
+    background-color: var(--accent-color);
+}
+
+.task-list {
+    list-style-type: none;
+}
+
+.list-item-bottom-border {
+    border-bottom: 2px solid #ccc;
+}
+
+.task-icon-primary {
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+.task-icon-secondary {
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+
+.task-icon-accent {
+    border-radius: 8px;
+    background-color: var(--accent-color);
+    padding: 10px;
+}
+
+svg.invert-svg {
+    /* -webkit-filter: invert(100%);
+    filter: invert(100%) !important; */
+    fill: #fff;
+}

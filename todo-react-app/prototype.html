@@ -1,17 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mock To-Do App</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-</head>
-<body>
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
 
-    <img src="./src/assets/reference_img.jpg" alt="">
+    <link rel="stylesheet" href="prototype.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="./todo-react-app/node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    /> -->
+    <!-- bs-icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <!-- reference image -->
+      <div class="position-reference-link shadow d-grid flex-columnz justify-content-center">
+        <h6>Replicated by:</h6>
+        <p class="h5" style="color: #fff">Mr. Thabang Mposula</p>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</body>
+        <h6>Referenced from:</h6>
+        <a href="https://dribbble.com/shots/6560393-To-do-List-App"
+          >dribbble.com/shots/6560393-To-do-List-App</a
+        >
+        <a
+          href="https://www.mockplus.com/resource/post/25-great-to-do-list-app-ui-designs-for-your-inspiration"
+          >www.mockplus.com</a
+        >
+      </div>
+      <img
+        src="./src/assets/reference_img.jpg"
+        class="img-fluid"
+        alt="reference img"
+      />
+      <!-- ./ reference image -->
+
+      <header class="p-5">
+        <!-- hero -->
+        <div class="hero">
+          <!-- intro -->
+          <div class="row mb-5">
+            <div class="col-10 text-white">
+              <h6>Good Morning</h6>
+              <h1>Complete this task for a better life.</h1>
+            </div>
+            <div class="col-2">
+              <div class="search">
+                <i
+                  class="bi bi-search"
+                  style="color: #fff; font-size: 2rem"
+                ></i>
+
+                <!-- <img
+                  src="./node_modules/bootstrap-icons/icons/search.svg"
+                  class="img-fluid text-white"
+                  alt=""
+                  style="min-height: 50px; color: white"
+                /> -->
+              </div>
+            </div>
+          </div>
+          <!-- ./ intro -->
+        </div>
+        <!-- ./ hero -->
+      </header>
+
+      <!-- todo topics horizontal scroll -->
+      <div class="horiz-scroll todo-topics-offset no-scrollbar">
+        <div
+          class="h-card text-white secondary-bg d-flex flex-column justify-content-between"
+        >
+          <div>
+            <h6>Meeting</h6>
+            <p>Sub-Title</p>
+          </div>
+          <img src="./src/assets/react.svg" alt="sample image" />
+        </div>
+        <div
+          class="h-card text-white accent-bg d-flex flex-column justify-content-between"
+        >
+          <div>
+            <h6>Study</h6>
+            <p>Sub-Title</p>
+          </div>
+          <img src="./src/assets/react.svg" alt="sample image" />
+        </div>
+        <div
+          class="h-card text-white secondary-bg d-flex flex-column justify-content-between"
+        >
+          <div>
+            <h6>Entertainment</h6>
+            <p>Sub-Title</p>
+          </div>
+          <img src="./src/assets/react.svg" alt="sample image" />
+        </div>
+        <div
+          class="h-card text-white accent-bg d-flex flex-column justify-content-between"
+        >
+          <div>
+            <h6>Family</h6>
+            <p>Sub-Title</p>
+          </div>
+          <img src="./src/assets/react.svg" alt="sample image" />
+        </div>
+      </div>
+      <!-- ./ todo topics horizontal scroll  -->
+
+      <!-- main content -->
+      <main class="p-5" style="margin-bottom: 100px">
+        <h1 class="mb-4">Tasks</h1>
+
+        <ul class="task-list d-flex flex-column gap-2 p-0">
+          <li class="task-item">
+            <!-- task item content row -->
+            <div class="row justify-content-between">
+              <div class="col-2 text-center" style="max-width: 100px">
+                <img
+                  src="./src/assets/react.svg"
+                  alt="sample image"
+                  class="task-icon-secondary img-fluid"
+                />
+              </div>
+              <div class="col-8 list-item-bottom-border">
+                <div class="d-grid">
+                  <h6>Activity Title</h6>
+                  <p>Category</p>
+                </div>
+              </div>
+              <div
+                class="col-2 d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  class="text-dark img-fluid invert-svg"
+                  src="./node_modules/bootstrap-icons/icons/chevron-right.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- ./ task item content row -->
+          </li>
+          <li class="task-item">
+            <!-- task item content row -->
+            <div class="row justify-content-between">
+              <div class="col-2 text-center" style="max-width: 100px">
+                <img
+                  src="./src/assets/react.svg"
+                  alt="sample image"
+                  class="task-icon-accent img-fluid"
+                />
+              </div>
+              <div class="col-8 list-item-bottom-border">
+                <div class="d-grid">
+                  <h6>Activity Title</h6>
+                  <p>Category</p>
+                </div>
+              </div>
+              <div
+                class="col-2 d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  class="text-dark img-fluid invert-svg"
+                  src="./node_modules/bootstrap-icons/icons/chevron-right.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- ./ task item content row -->
+          </li>
+          <li class="task-item">
+            <!-- task item content row -->
+            <div class="row justify-content-between">
+              <div class="col-2 text-center" style="max-width: 100px">
+                <img
+                  src="./src/assets/react.svg"
+                  alt="sample image"
+                  class="task-icon-primary img-fluid"
+                />
+              </div>
+              <div class="col-8 list-item-bottom-border">
+                <div class="d-grid">
+                  <h6>Activity Title</h6>
+                  <p>Category</p>
+                </div>
+              </div>
+              <div
+                class="col-2 d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  class="text-dark img-fluid invert-svg"
+                  src="./node_modules/bootstrap-icons/icons/chevron-right.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- ./ task item content row -->
+          </li>
+          <li class="task-item">
+            <!-- task item content row -->
+            <div class="row justify-content-between">
+              <div class="col-2 text-center" style="max-width: 100px">
+                <img
+                  src="./src/assets/react.svg"
+                  alt="sample image"
+                  class="task-icon-secondary img-fluid"
+                />
+              </div>
+              <div class="col-8 list-item-bottom-border">
+                <div class="d-grid">
+                  <h6>Activity Title</h6>
+                  <p>Category</p>
+                </div>
+              </div>
+              <div
+                class="col-2 d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  class="text-dark img-fluid invert-svg"
+                  src="./node_modules/bootstrap-icons/icons/chevron-right.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- ./ task item content row -->
+          </li>
+          <li class="task-item">
+            <!-- task item content row -->
+            <div class="row justify-content-between">
+              <div class="col-2 text-center" style="max-width: 100px">
+                <img
+                  src="./src/assets/react.svg"
+                  alt="sample image"
+                  class="task-icon-accent img-fluid"
+                />
+              </div>
+              <div class="col-8 list-item-bottom-border">
+                <div class="d-grid">
+                  <h6>Activity Title</h6>
+                  <p>Category</p>
+                </div>
+              </div>
+              <div
+                class="col-2 d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  class="text-dark img-fluid invert-svg"
+                  src="./node_modules/bootstrap-icons/icons/chevron-right.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- ./ task item content row -->
+          </li>
+          <li class="task-item">
+            <!-- task item content row -->
+            <div class="row justify-content-between">
+              <div class="col-2 text-center" style="max-width: 100px">
+                <img
+                  src="./src/assets/react.svg"
+                  alt="sample image"
+                  class="task-icon-primary img-fluid"
+                />
+              </div>
+              <div class="col-8 list-item-bottom-border">
+                <div class="d-grid">
+                  <h6>Activity Title</h6>
+                  <p>Category</p>
+                </div>
+              </div>
+              <div
+                class="col-2 d-flex flex-column justify-content-center align-items-center"
+              >
+                <img
+                  class="text-dark img-fluid invert-svg"
+                  src="./node_modules/bootstrap-icons/icons/chevron-right.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- ./ task item content row -->
+          </li>
+        </ul>
+      </main>
+      <!-- ./ main content -->
+
+      <!-- navigation footer -->
+      <footer>
+        <div class="row">
+          <div class="col text-center p-4">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <!-- <img
+                class="text-dark img-fluid invert-svg"
+                src="./node_modules/bootstrap-icons/icons/house.svg"
+                alt=""
+                style="min-height: 30px; color: white"
+              /> -->
+              <i class="bi bi-house" style="color: #fff; font-size: 2rem"></i>
+              <p>Home</p>
+            </div>
+          </div>
+          <div class="col text-center p-4">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <!-- <img
+                class="text-dark img-fluid invert-svg"
+                src="./node_modules/bootstrap-icons/icons/calendar-day.svg"
+                alt=""
+                style="min-height: 30px; color: white"
+              /> -->
+              <i
+                class="bi bi-calendar-day"
+                style="color: #fff; font-size: 2rem"
+              ></i>
+              <p>Calender</p>
+            </div>
+          </div>
+          <div class="col text-center p-4">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <!-- <img
+                class="text-dark img-fluid invert-svg"
+                src="./node_modules/bootstrap-icons/icons/journal.svg"
+                alt=""
+                style="min-height: 30px; color: white"
+              /> -->
+              <i class="bi bi-journal" style="color: #fff; font-size: 2rem"></i>
+              <p>Journal</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- ./ navigation footer -->
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
